@@ -22,9 +22,7 @@ import typing
 
 import attr
 
-_HandlerBaseType = typing.TypeVar(
-    "T", bound="Repository"
-)  # pylint: disable=invalid-name
+_HandlerBaseType = typing.TypeVar("T", bound="Repository")  # noqa: F821
 
 
 @attr.s
